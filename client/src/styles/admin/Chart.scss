@@ -1,0 +1,115 @@
+.manage-chart {
+  margin-left: 150px;
+  width: 87%;
+}
+.session-chart {
+  box-sizing: border-box;
+  margin-top: 34px;
+  //   height: 100vh;
+  padding: 20px;
+  border-radius: 0.5rem;
+  background-clip: padding-box;
+  .total-user,
+  .new-user,
+  .total-docs,
+  .visitor {
+    padding: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    width: 220px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 0 20px 20px 0;
+  }
+  .Bar {
+    width: 750px !important;
+    height: 364px !important;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .Line {
+    width: 640px !important;
+    height: 330px !important;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .info-pie-chart {
+    background-color: white;
+    margin-left: 30px;
+    border-radius: 10px;
+    padding: 20px 0px 20px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    .PieDonut {
+      width: 280px !important;
+      height: 280px !important;
+    }
+    .content__pie-chart {
+      margin: 20px 0px 20px 20px;
+      .donut {
+        width: 12px;
+        height: 12px;
+        background-color: transparent;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 100px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .table__rp-docs {
+    // margin: 0 auto;
+    width: 100%;
+    color: #5d596c;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    .must-paid {
+      color: #0a1d56;
+    }
+    .balance {
+      color: #ff9900;
+    }
+    .date-paid {
+      color: #464646;
+    }
+    th,
+    td {
+      text-align: left;
+      padding: 14px;
+    }
+    tr {
+      &:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .violation {
+    width: 32%;
+
+    .user_locked,
+    .docs_locked {
+      padding: 30px;
+      color: white;
+      box-sizing: border-box;
+      // background-color: white;
+      margin: 0 0 20px 20px;
+      border-radius: 5px;
+    }
+    .user_locked {
+      background-color: #1e1867;
+    }
+    .docs_locked {
+      background-color: #43778f;
+    }
+  }
+}

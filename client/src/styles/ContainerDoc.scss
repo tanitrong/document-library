@@ -1,0 +1,36 @@
+.container-doc {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 100%;
+  .item {
+    width: 15%;
+    height: 100%;
+    box-sizing: border-box;
+    // border-radius: 5px;
+    padding: 4px 10px 10px 10px;
+    margin-bottom: 30px;
+
+    border: 2px solid #212b3f;
+    border-radius: 6px;
+    cursor: pointer;
+    h4 {
+      text-align: left;
+      color: #333333;
+      margin: 5px 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    span {
+      color: #bababa;
+    }
+    .image-doc {
+      width: 100%;
+      height: 210px;
+      object-fit: contain;
+    }
+  }
+}

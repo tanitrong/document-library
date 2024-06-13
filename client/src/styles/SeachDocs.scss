@@ -1,0 +1,96 @@
+.doc-searched {
+  .filter__doc {
+    display: flex;
+    gap: 20px;
+    .item {
+      position: relative;
+      padding: 10px;
+      background-color: white;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      &:hover .drop__down-category,
+      &:hover .drop__down-price,
+      &:hover .drop__down-priority {
+        display: block;
+      }
+      .drop__down-category,
+      .drop__down-price,
+      .drop__down-priority {
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        display: block;
+        color: black;
+        border: 1px solid #ccc;
+        margin: 10px 0 0 -10px;
+        padding: 0;
+        display: none;
+        li {
+          margin: 4px;
+          // width: 100%;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          &:hover {
+            background-color: #12ab7f;
+            color: white !important;
+          }
+        }
+      }
+    }
+  }
+  .result-keyword {
+    font-weight: 600;
+    font-size: 26px;
+    color: #282828;
+  }
+  .display-docs {
+    width: 70%;
+    .item {
+      margin: 20px 0;
+      display: flex;
+      //   background-color: #ccc;
+      padding: 10px;
+      width: 100%;
+      cursor: pointer;
+      p {
+        margin: 0;
+      }
+      img {
+        width: 80px;
+        height: 113px;
+        object-fit: contain;
+        // height: fit-content;
+        border-radius: 5px;
+        border: 10px solid #d9d9d9;
+      }
+      .info-doc {
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: #7f7f7f;
+      }
+    }
+  }
+  .keyword-related {
+    position: sticky;
+    top: 10px;
+    padding: 10px;
+    width: 24%;
+    box-sizing: border-box;
+    margin-left: 40px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    .item {
+      padding: 5px 10px;
+      background-color: white;
+      border: 1px solid #7f7f7f;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0 10px 10px 0;
+    }
+  }
+}

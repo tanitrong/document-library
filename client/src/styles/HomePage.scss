@@ -1,0 +1,57 @@
+.slider {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  background-color: #ecf8f5;
+  box-sizing: border-box;
+  padding: 60px;
+  .content {
+    p {
+      line-height: 30px;
+    }
+  }
+  img {
+    width: 300px;
+  }
+}
+.explore-docs {
+  padding: 25px;
+  background-color: #fff;
+  text-align: center;
+  .items-category {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: #373f50;
+    .item {
+      width: 26%;
+      img {
+        width: 90%;
+        height: 212px;
+        object-fit: contain;
+      }
+    }
+  }
+  a {
+    display: inline-block;
+    margin-top: 30px;
+  }
+}
+
+.weekly-review,
+.featured-document,
+.recent-doc {
+  background-color: #fff;
+  h1 {
+    color: #fa8c00;
+  }
+  .separator {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    h1 {
+      vertical-align: middle;
+    }
+  }
+}

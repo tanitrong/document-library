@@ -1,0 +1,163 @@
+.group-profile {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+}
+.form-user {
+  width: 90%;
+  background-color: #f8f9fc;
+}
+.container-profile {
+  width: 80%;
+  background-color: white;
+  margin-left: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.input-password {
+  padding: 10px 184px 8px 10px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  border: 1px solid #cbcbcb;
+}
+.form-group label {
+  width: 150px;
+  margin-right: 10px;
+}
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="button"],
+.form-group select {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+.form-group input[type="button"]:hover,
+.form-group input[type="button"]:focus {
+  background-color: #00b7fe;
+  color: white;
+}
+.form-group .button-label {
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #eee;
+  cursor: pointer;
+  user-select: none;
+}
+.form-group .button-label:hover,
+.form-group .button-label:focus {
+  background-color: #4caf50;
+  color: white;
+}
+.form-group .info-label {
+  cursor: pointer;
+  color: #007bff;
+  transition: color 0.3s;
+}
+.btn-update {
+  width: 105px;
+  height: 40px;
+  background-color: #00b7fe;
+  color: white;
+  margin: auto;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.password-note {
+  width: 360px;
+  background-color: #fce4e4;
+  color: #ff9900;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+.btn-security {
+  width: 140px;
+  height: 40px;
+  background-color: #00b7fe;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.btn-cancel {
+  width: 76px;
+  height: 40px;
+  border: none;
+  color: #858585;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+.info-plan {
+  display: flex;
+  .infor-docs {
+    color: #585858;
+    font-weight: 400;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .remaining {
+    width: 480px;
+    padding: 20px;
+    color: #585858;
+    box-sizing: border-box;
+    .warning-plan {
+      background-color: #fce4e4;
+      padding: 20px;
+      color: #f58925;
+      box-sizing: border-box;
+      margin-bottom: 30px;
+    }
+    .process-plan {
+      width: 100%;
+      height: 24px;
+    }
+  }
+}
+.action-plan {
+  text-align: center;
+  margin-top: 40px;
+  .upgrade-plan {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #551fff;
+    color: white;
+    margin-right: 20px;
+  }
+
+  .cancel-plan {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fce4e4;
+    color: #ea5455;
+  }
+}
+.btn-nangcap {
+  width: 123px;
+  height: 40px;
+  background-color: #00b7fe;
+  border: none;
+}
+.btn-huygoi {
+  width: 123px;
+  height: 40px;
+  background-color: #fce4e4;
+  border: none;
+}

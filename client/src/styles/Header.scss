@@ -1,0 +1,216 @@
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    background-color: #59efb2;
+    box-sizing: border-box;
+    padding: 0.6rem 3rem;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    .contact {
+      display: flex;
+      gap: 2rem;
+      a {
+        &:hover {
+          color: #ed553b;
+        }
+      }
+    }
+  }
+  .middle {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+
+    padding: 0.2rem 3rem;
+    .logo {
+      width: 5rem;
+      height: 2rem;
+      margin-right: 10px;
+    }
+    .category {
+      position: relative;
+      :hover {
+        cursor: pointer;
+      }
+      ::after {
+        position: absolute;
+        top: -30px;
+        content: " ";
+        width: 100%;
+        height: 30px;
+        background-color: transparent;
+      }
+      &:hover .drop-down {
+        display: block;
+      }
+      .drop-down {
+        position: absolute;
+        background-color: white;
+        width: 190px;
+        display: block;
+        color: black;
+        padding-left: 0px;
+        border: 1px solid #ccc;
+        display: none;
+        li {
+          margin: 4px 0;
+          width: 100%;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          &:hover {
+            background-color: #12ab7f;
+          }
+          &:hover a {
+            color: white !important;
+          }
+          .block-dropdown {
+            width: 4px;
+            height: 100%;
+            margin-right: 10px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .search-docs {
+      position: relative;
+      margin-right: 20px;
+      input {
+        display: inline-flex;
+        width: calc(100vw - 1100px);
+        height: 40px;
+        border-radius: 66px;
+        border: 1px solid #ccc;
+        padding: 0 40px;
+      }
+      .ab {
+        position: absolute;
+        top: 12px;
+        right: 20px;
+      }
+    }
+    .upgrade {
+      margin-right: 30px;
+      text-decoration: none;
+      color: #12ab7f;
+    }
+    .upload {
+      width: 120px;
+      height: 40px;
+      box-shadow: 4px 4px 4px rgba(29, 247, 158, 0.2),
+        4px 4px 4px rgba(29, 247, 158, 0.2);
+      border: none;
+      border-radius: 7px;
+      background-color: #59efb2;
+      color: #fff;
+      margin-right: 20px;
+      // display: block;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #54e3a9;
+        box-shadow: none;
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style-type: none;
+    li a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+$nav-link-color: #666666;
+$bg-color: #f3f5f4;
+$navbar-color: #ffffff;
+$border-gray: #e0e0e0;
+$hover-gray: #f5f5f5;
+$active-gray: #ebebeb;
+
+$at-blue-light: #00afe9;
+$at-blue-dark: #006ab8;
+
+$red: #f44336;
+
+ul {
+  list-style: none;
+}
+
+.user-menu-wrap {
+  position: relative;
+  width: 36px;
+  margin: 50px auto;
+}
+.btn-signup,
+.btn-signin {
+  padding: 12px;
+  margin-right: 10px;
+  border: 1px solid rgb(186, 186, 186);
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+}
+
+.menu-container {
+  visibility: hidden;
+  opacity: 0;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.user-menu {
+  position: absolute;
+  right: -22px;
+  background-color: #ffffff;
+  width: 190px;
+  border-radius: 2px;
+  // border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: -2px -2px 2px rgba(28, 155, 125, 0.1),
+    4px 4px 4px rgba(28, 155, 125, 0.1);
+  padding: 10px;
+
+  .user-menu-link {
+    display: flex;
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 16px;
+
+    div {
+      margin: auto 10px;
+    }
+
+    &:hover {
+      color: #12ab7f;
+    }
+  }
+
+  &:before {
+    position: absolute;
+    top: -20px;
+    left: 160px;
+    display: inline-block;
+    content: "";
+    border: 10px solid transparent;
+    border-bottom-color: #59efb2;
+  }
+}

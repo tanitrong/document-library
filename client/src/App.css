@@ -1,0 +1,98 @@
+#root {
+  max-width: calc(100% - 200px);
+  margin: 0 auto;
+}
+.iconx2 {
+  font-size: 1.3rem;
+  vertical-align: middle;
+}
+.dflex {
+  display: flex;
+}
+.dflex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.bl {
+  display: block;
+}
+.mr {
+  margin-right: 10px;
+}
+.ml {
+  margin-left: 10px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mt-60 {
+  margin-top: 60px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.margin-auto {
+  margin: auto;
+}
+.primary-color {
+  color: #ed553b;
+}
+.third-color {
+  color: #12ab7f;
+}
+.secondary-color {
+  color: #888888;
+}
+.btn-primary {
+  background-color: #59efb2;
+  box-shadow: 4px 4px 4px rgba(29, 247, 158, 0.2),
+    4px 4px 4px rgba(29, 247, 158, 0.2);
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    background-color: #54e3a9;
+    box-shadow: none;
+    cursor: pointer;
+  }
+}
+.vertical-align {
+  vertical-align: middle;
+}
+.text-color-primary {
+  color: #92959e;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  background: #ffffff;
+  scroll-behavior: smooth;
+}
+input,
+select {
+  outline: none;
+}
+
+.batch_heart {
+  background: tomato;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  right: -24%;
+  top: -9%;
+  cursor: pointer;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
